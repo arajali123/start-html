@@ -41,6 +41,12 @@ body {
 	line-height: 1.6;
 }
 
+body,
+.site-main {
+  position: relative;
+  overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -54,7 +60,7 @@ h6 {
 	font-family: var(--tj-ff-heading);
 	color: var(--tj-color-heading-primary);
 	margin-top: 0px;
-	font-weight: var(--tj-fw-sbold);
+	font-weight: var(--tj-fw-bold);
 	line-height: 1.2;
 	@include transition(all 0.3s ease-in-out 0s);
 }
@@ -69,6 +75,18 @@ h2 {
 
 h3 {
 	font-size: var(--tj-fs-h3);
+	@media #{$lg} {
+		font-size: 35px;
+	}
+	@media #{$md} {
+		font-size: 30px;
+	}
+	@media #{$sm} {
+		font-size: 25px;
+	}
+	@media #{$xs} {
+		font-size: 20px;
+	}
 }
 
 h4 {
@@ -254,4 +272,20 @@ img {
 }
 .fix {
 	overflow: hidden;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1760px;
+}
+
+@media #{$xs} {
+	.row {
+		padding-left: 13px;
+		padding-right: 13px;
+	}
 }

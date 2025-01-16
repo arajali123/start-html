@@ -1,12 +1,11 @@
 // Font URL
-$font-url: "https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Old+Standard+TT:wght@400;700&display=swap";
+$font-url: "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap";
 
 //Font Family
 $font-family: (
 	ff: (
-		body: "'Jost', sans-serif",
-		heading: "'Old Standard TT', serif",
-		p: "'Jost', sans-serif",
+		body: "'Archivo', serif",
+		heading: "'Oswald', serif",
 		fontawesome: '"Font Awesome 6 Pro"',
 	),
 );
@@ -30,11 +29,10 @@ $font-scale: (
 // Font Size
 $font-size: (
 	fs: (
-		body: 14px,
-		p: 14px,
-		h1: 40px,
-		h2: 36px,
-		h3: 24px,
+		body: 16px,
+		h1: 144px,
+		h2: 64px,
+		h3: 40px,
 		h4: 20px,
 		h5: 16px,
 		h6: 14px,
